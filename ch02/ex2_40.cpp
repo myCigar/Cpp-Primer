@@ -1,10 +1,15 @@
 #include <iostream>
-#include "ex2_42.h"
+#include <string>
+
+struct Sales_data {
+	std::string bookNo;
+	unsigned bookCnt;
+	double price;
+};
 
 Sales_data data1, data2;
 int main()
 {
-	std::cout << add() << std::endl; 
 	std::cin >> data1.bookNo >> data1.bookCnt >> data1.price;
 	std::cin >> data2.bookNo >> data2.bookCnt >> data2.price;
 	
