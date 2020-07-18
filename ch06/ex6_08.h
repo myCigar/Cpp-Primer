@@ -9,5 +9,6 @@ using namespace std;
 string f();
 int calc(int v1, int v2);
 double square(double x);
+int fact(int val);
 
 #endif
