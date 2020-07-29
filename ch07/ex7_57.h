@@ -16,4 +16,5 @@ private:
     static double initRate();
 };
 
+
 #endif

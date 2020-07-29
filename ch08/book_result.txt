@@ -1,0 +1,18 @@
+Book number : BOOK1
+Units sold : 2
+Revenue : 110
+Book number : BOOK2
+Units sold : 6
+Revenue : 205
+Book number : BOOK3
+Units sold : 3
+Revenue : 50
+Book number : BOOK1
+Units sold : 2
+Revenue : 110
+Book number : BOOK2
+Units sold : 6
+Revenue : 205
+Book number : BOOK3
+Units sold : 3
+Revenue : 50

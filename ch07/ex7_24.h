@@ -37,6 +37,4 @@ Screen &Screen::move(pos r, pos c)
     return *this;
 }
 
-
-
 #endif
