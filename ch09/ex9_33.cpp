@@ -11,8 +11,8 @@ int main()
     while (begin != vec.end())
     {
         ++begin;
-        vec.insert(begin, 42);
-        //++begin; 
+        begin = vec.insert(begin, 42);
+        ++begin; 
     }
 
     for (auto iter = vec.cbegin(); iter != vec.cend(); ++iter)

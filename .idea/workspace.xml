@@ -9,7 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85d373fb-7873-4b61-99b8-ca176a42b5e0" name="Default Changelist" comment="" />
+    <list default="true" id="85d373fb-7873-4b61-99b8-ca176a42b5e0" name="Default Changelist" comment="ch10" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +31,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ch10" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager">
@@ -49,14 +49,41 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598699171491</updated>
-      <workItem from="1598699177291" duration="167000" />
+      <workItem from="1598699177291" duration="504000" />
     </task>
+    <task id="LOCAL-00001" summary="ch10">
+      <created>1598699487908</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598699487909</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ch10" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch10" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="780" y="248" key="FileChooserDialogImpl" timestamp="1598699358358">
+      <screen x="65" y="24" width="1855" height="958" />
+    </state>
+    <state x="780" y="248" key="FileChooserDialogImpl/65.24.1855.958@65.24.1855.958" timestamp="1598699358358" />
     <state x="486" y="125" key="SettingsEditor" timestamp="1598699349253">
       <screen x="65" y="24" width="1855" height="958" />
     </state>
