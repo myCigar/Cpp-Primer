@@ -13,12 +13,5 @@ istream& read(istream &c)
     return c;
 }
 
-int main()
-{
-    istream &c = read(cin);
-    
-    cout << c.rdstate() << endl;
 
-    return 0;
-}
 
