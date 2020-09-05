@@ -8,7 +8,6 @@ TextQuery::TextQuery(std::ifstream &inf) : text(new vector<string>)
     string line;
     while (getline(inf, line))
     {
-        
         text->push_back(line);
         istringstream is(line);
         string word;
@@ -25,7 +24,7 @@ TextQuery::TextQuery(std::ifstream &inf) : text(new vector<string>)
                     word = word.substr(0, word.size()-1);
                 }
             }
-            auto iter = wordCounts[word];
+            shared_ptr<set<int>> &iter = wordCounts[word];
             if (!iter)   // first meet word, need new set<int> to a shared_ptr
             {
                 iter.reset(new set<int>);
@@ -38,7 +37,6 @@ TextQuery::TextQuery(std::ifstream &inf) : text(new vector<string>)
 QueryResult TextQuery::query(const string &objWord) const
 {
     shared_ptr<set<int>> nodata(new set<int>);
-    cout << "111" << endl;
     auto iter = wordCounts.find(objWord);
     if (iter == wordCounts.end())
         return QueryResult(objWord, text, nodata);
