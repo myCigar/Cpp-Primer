@@ -1,5 +1,5 @@
-#ifndef EX13_39_STR_VEC_H_
-#define EX13_39_STR_VEC_H_
+#ifndef EX13_40_STR_VEC_H_
+#define EX13_40_STR_VEC_H_
 
 #include <memory>
 #include <utility>
@@ -9,6 +9,7 @@ class StrVec {
 public:
     StrVec() : elements(nullptr), first_free(nullptr), cap(nullptr) { }
     StrVec(const StrVec&);
+    StrVec(std::initializer_list<std::string> listStr);
     StrVec& operator=(const StrVec&);
     ~StrVec();
     void push_back(const std::string&);
@@ -29,6 +30,14 @@ private:
     std::pair<std::string*, std::string*> alloc_n_copy(const std::string *b, const std::string *e);
     void free();
     void reallocate();
-};
+};  
+
+StrVec::StrVec(std::initializer_list<std::string> listStr)
+{
+    std::pair<std::string*, std::string*> data = alloc_n_copy(listStr.begin(), listStr.end());
+    elements = data.first;
+    first_free = data.second;
+    cap = data.second;
+}
 
 #endif

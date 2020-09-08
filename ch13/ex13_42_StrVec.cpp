@@ -1,4 +1,8 @@
-#include "ex13_39_StrVec.h"
+//
+// Created by someone on 2020/9/7.
+//
+
+#include "ex13_42_StrVec.h"
 #include <algorithm>
 
 void StrVec::chk_n_alloc()
@@ -16,12 +20,8 @@ StrVec::alloc_n_copy(const std::string *b, const std::string *e)
 
 void StrVec::free()
 {
-    if (elements) {
-        for (auto p = first_free; p != elements; /* null */) {
-            alloc.destroy(--p);
-        }
-        alloc.deallocate(elements, cap - elements);
-    }
+    std::for_each(elements, first_free, [this](std::string &rhs){ alloc.destroy(&rhs); });
+    alloc.deallocate(elements, cap - elements);
 }
 
 void StrVec::reallocate()
@@ -83,6 +83,14 @@ StrVec& StrVec::operator=(const StrVec& s)
 {
     std::pair<std::string*, std::string*> data = alloc_n_copy(s.begin(), s.end());
     free();
+    elements = data.first;
+    first_free = data.second;
+    cap = data.second;
+}
+
+StrVec::StrVec(std::initializer_list<std::string> listStr)
+{
+    std::pair<std::string*, std::string*> data = alloc_n_copy(listStr.begin(), listStr.end());
     elements = data.first;
     first_free = data.second;
     cap = data.second;

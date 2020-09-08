@@ -38,6 +38,19 @@
         "typeinfo": "cpp",
         "list": "cpp",
         "forward_list": "cpp",
-        "memory": "cpp"
+        "memory": "cpp",
+        "cstddef": "cpp",
+        "ctime": "cpp",
+        "atomic": "cpp",
+        "strstream": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "complex": "cpp",
+        "ratio": "cpp",
+        "iomanip": "cpp",
+        "thread": "cpp",
+        "cfenv": "cpp",
+        "cinttypes": "cpp",
+        "typeindex": "cpp"
     }
 }
